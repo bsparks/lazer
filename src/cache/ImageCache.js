@@ -1,5 +1,5 @@
-import BaseCache from 'cache/BaseCache.js';
-import ImageFile from 'cache/types/ImageFile.js';
+import BaseCache from './BaseCache.js';
+import ImageFile from './types/ImageFile.js';
 
 export default class ImageCache extends BaseCache {
 

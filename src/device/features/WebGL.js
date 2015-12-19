@@ -1,4 +1,4 @@
-import WebGLGetContext from 'webgl/GetContext.js';
+import WebGLGetContext from '../../webgl/GetContext.js';
 
 export default function () {
 
