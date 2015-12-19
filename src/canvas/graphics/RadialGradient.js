@@ -1,4 +1,4 @@
-import Clamp from 'math/Clamp.js';
+import Clamp from '../../math/Clamp.js';
 
 // x0 - The x axis of the coordinate of the start circle.
 // y0 - The y axis of the coordinate of the start circle.
@@ -25,7 +25,7 @@ export default function RadialGradient (context, x0, y0, r0, x1, y1, r1, ...colo
     }
 
     return gradient;
-    
+
 }
 
 export function addColor (gradient, offset, color) {

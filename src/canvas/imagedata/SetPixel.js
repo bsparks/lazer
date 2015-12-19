@@ -1,4 +1,4 @@
-import GetIndex from 'canvas/imagedata/GetIndex.js';
+import GetIndex from './GetIndex.js';
 
 //  Writes a single value to the given imageData.
 
@@ -17,5 +17,5 @@ export default function SetPixel (imageData, x, y, red = 0, green = 0, blue = 0,
     }
 
     return false;
-    
+
 }

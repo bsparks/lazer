@@ -1,6 +1,6 @@
-import Vec2 from 'math/vector/vec2/Vec2.js';
-import SetPixel from 'canvas/imagedata/SetPixel.js';
-import PutImageData from 'canvas/imagedata/PutImageData.js';
+import Vec2 from '../../math/vector/vec2/Vec2.js';
+import SetPixel from '../imagedata/SetPixel.js';
+import PutImageData from '../imagedata/PutImageData.js';
 
 //  Set Pixels
 
@@ -27,7 +27,7 @@ export function load (context, imageData, offsetX = 0, offsetY = 0) {
         this.br.zero();
         this.offset.setTo(offsetX, offsetY);
     }
-    
+
 }
 
 export function set (x, y, red = 0, green = 0, blue = 0, alpha = 255) {
@@ -67,10 +67,10 @@ export function write () {
     }
 
     return PutImageData(
-        this.context, 
-        this.imageData, 
-        this.offset.x, 
-        this.offset.y, 
+        this.context,
+        this.imageData,
+        this.offset.x,
+        this.offset.y,
         this.tl.x,
         this.tl.y,
         this.br.x - this.tl.x,

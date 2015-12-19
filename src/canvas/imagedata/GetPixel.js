@@ -1,4 +1,4 @@
-import GetIndex from 'canvas/imagedata/GetIndex.js';
+import GetIndex from './GetIndex.js';
 
 /**
  * [description]
@@ -21,5 +21,5 @@ export default function GetPixel (imageData, x, y, out = { r: 0, g: 0, b: 0, a: 
     }
 
     return out;
-    
+
 }

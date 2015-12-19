@@ -1,4 +1,4 @@
-import GetIndex from 'canvas/imagedata/GetIndex.js';
+import GetIndex from './GetIndex.js';
 
 export default function GetPixels3x3 (imageData, x, y, out = []) {
 
@@ -49,5 +49,5 @@ export default function GetPixels3x3 (imageData, x, y, out = []) {
     }
 
     return out;
-    
+
 }

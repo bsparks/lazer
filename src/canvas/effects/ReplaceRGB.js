@@ -1,8 +1,8 @@
-import ProcessPixels from 'canvas/pixels/Process.js';
+import ProcessPixels from '../pixels/Process.js';
 
 /**
 * Replaces all pixels matching one color with another. The color values are given as two sets of RGBA values.
-* An optional region parameter controls if the replacement happens in just a specific area of the BitmapData or the entire thing. 
+* An optional region parameter controls if the replacement happens in just a specific area of the BitmapData or the entire thing.
 *
 * @method Phaser.BitmapData#replaceRGB
 * @param {number} r1 - The red color value to be replaced. Between 0 and 255.

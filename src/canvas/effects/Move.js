@@ -1,6 +1,6 @@
-import GetContext from 'canvas/GetContext.js';
-import SetTransform from 'canvas/SetTransform.js';
-import ResetTransform from 'canvas/ResetTransform.js';
+import GetContext from '../GetContext.js';
+import SetTransform from '../SetTransform.js';
+import ResetTransform from '../ResetTransform.js';
 
 export default function Move (canvas, tx, ty, wrapX = true, wrapY = true) {
 
@@ -23,7 +23,7 @@ export default function Move (canvas, tx, ty, wrapX = true, wrapY = true) {
 
     //  Make a fill pattern from the canvas
     let pattern = ctx.createPattern(canvas, type);
-    
+
     const oldFill = ctx.fillStyle;
 
     ctx.fillStyle = pattern;
@@ -41,5 +41,5 @@ export default function Move (canvas, tx, ty, wrapX = true, wrapY = true) {
     pattern = undefined;
 
     return canvas;
-    
+
 }

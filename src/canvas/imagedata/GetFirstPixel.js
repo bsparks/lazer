@@ -1,14 +1,14 @@
-import TopToBottom from 'canvas/imagedata/ScanTopToBottom.js';
-import BottomToTop from 'canvas/imagedata/ScanBottomToTop.js';
-import LeftToRight from 'canvas/imagedata/ScanLeftToRight.js';
-import RightToLeft from 'canvas/imagedata/ScanRightToLeft.js';
+import TopToBottom from './ScanTopToBottom.js';
+import BottomToTop from './ScanBottomToTop.js';
+import LeftToRight from './ScanLeftToRight.js';
+import RightToLeft from './ScanRightToLeft.js';
 
 /**
 * Scans the BitmapData, pixel by pixel, until it encounters a pixel that isn't transparent (i.e. has an alpha value > 0).
 * It then stops scanning and returns an object containing the color of the pixel in r, g and b properties and the location in the x and y properties.
-* 
+*
 * The direction parameter controls from which direction it should start the scan:
-* 
+*
 * 0 = top to bottom
 * 1 = bottom to top
 * 2 = left to right
@@ -37,5 +37,5 @@ export default function GetFirstPixel (imageData, direction = 0, tolerance = 0) 
     {
         return RightToLeft(imageData, tolerance);
     }
-    
+
 }

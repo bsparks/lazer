@@ -1,6 +1,6 @@
-import SetPixelData from 'canvas/imagedata/SetPixel.js';
-import GetImageData from 'canvas/imagedata/GetImageData.js';
-import PutImageData from 'canvas/imagedata/PutImageData.js';
+import SetPixelData from '../imagedata/SetPixel.js';
+import GetImageData from '../imagedata/GetImageData.js';
+import PutImageData from '../imagedata/PutImageData.js';
 
 //  Writes to the given context immediately.
 //  If you wish to perform lots of pixel ops at once then use SetPixels instead.
@@ -16,5 +16,5 @@ export default function SetPixel (context, x, y, red = 0, green = 0, blue = 0, a
     }
 
     return context;
-    
+
 }
