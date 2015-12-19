@@ -1,4 +1,4 @@
-import Signal from '../system/Signal.js';
+import Signal from './Signal.js';
 
 export default class EventDispatcher {
 
